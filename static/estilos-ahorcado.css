@@ -1,0 +1,236 @@
+body {
+    background-image: url("img/fondo.png");
+    position: relative;
+    font-family: Lucida Sans Typewriter,Lucida Console,monaco,Bitstream Vera Sans Mono,monospace;
+    display: flex;
+    flex-direction: column;
+}
+
+.enlaces-redes {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    gap: 20px;
+    margin: 10px 30px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.enlaces-redes p {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter';
+}
+
+.previo {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.palabra-agregar {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+}
+
+.previo button, .palabra-agregar button {
+    width: 25vw;
+    height: 15vh;
+    border-radius: 15px;
+    font-size: 30px;
+    transition: 0s;
+}
+
+.previo button:hover, .palabra-agregar button:hover {
+    transform: scale(1.2);
+    background-color: darkgrey;
+    transition: 1s;
+}
+
+.previo button:focus, .palabra-agregar button:focus {
+    transition: 0s;
+}
+
+.palabra-agregar input {
+    font-size: 30px;
+    height: 40px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
+.principal {
+    visibility: hidden;
+}
+
+.palabra-dibujo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.palabra {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+    width: 50vw;
+    margin: 0 auto;
+}
+
+#palabra-adivinar {
+    letter-spacing: 5px;
+    font-size: xx-large;
+    width: 50vw;
+    height: 25vh;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.dibujo {
+    width: 34vh;
+    height: 40vh;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.img {
+    position: absolute;
+    visibility: hidden;
+}
+
+.imagen0 {
+    bottom: 0;
+    width: 100%;
+    z-index: 15;
+}
+
+.imagen1 {
+    height: 86%;
+    right: 8%;
+    bottom: 0;
+    z-index: 14;
+}
+
+.imagen2 {
+    width: 80%;
+    height: 20%;
+    right: 5%;
+    top: 3%;
+    z-index: 13;
+}
+
+.imagen3 {
+    width: 35%;
+    right: 12%;
+    top: 10%;
+    z-index: 12;
+}
+
+.imagen4 {
+    height: 35%;
+    left: 30%;
+    top: 8%;
+    z-index: 13;
+}
+
+.imagen5 {
+    width: 20%;
+    left: 28%;
+    top: 29%;
+    z-index: 14;
+}
+
+.imagen6 {
+    width: 20%;
+    left: 27.5%;
+    top: 38%;
+    z-index: 13;
+}
+
+.imagen7 {
+    width: 20%;
+    left: 39%;
+    top: 43%;
+    z-index: 12;
+}
+
+.imagen8 {
+    width: 20%;
+    left: 17%;
+    top: 43%;
+    z-index: 12;
+}
+
+.imagen9 {
+    width: 20%;
+    left: 35%;
+    top: 55%;
+    z-index: 12;
+}
+
+.imagen10 {
+    width: 20%;
+    left: 21%;
+    top: 52%;
+    z-index: 12;
+}
+
+.teclado {
+    text-align: center;
+    margin-top: 40px;
+
+}
+
+.tecla {
+    width: 4%;
+    height: auto;
+    padding: 1%;
+    margin: 0.5%;
+    font-weight: bold;
+}
+
+.rojo {
+    background-color: red;
+}
+
+.verde {
+    background-color: green;
+}
+
+.ganaste, .perdiste {
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10vh;
+    background-color: rgb(170, 76, 76);
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+}

@@ -6,8 +6,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ahorcado</title>
     <link rel="stylesheet" href="static/estilos-ahorcado.css">
+
 </head>
 <body>
-    
+    <header class="enlaces-redes">
+        <p>Dev. </p>
+        <a href="https://www.linkedin.com/in/nahuel-villarreal77/" target="_blank"><img src="static/img/linkedin.png" alt="logo linkedin"></a>
+        <a href="https://github.com/NahuelVillarreal" target="_blank"><img src="static/img/github.png" alt="logo github"></a>
+    </header>
+    <main class="previo">
+        <button class="juego-nuevo" onclick="juego_nuevo()">Juego nuevo</button>
+        <button class="agregar-palabra" onclick="agregar_palabra()">Agregar palabra</button>
+    </main>
+    <div class="palabra-agregar">
+        <input type="text" name="palabra" id="palabra">
+        <button class="agregar" onclick="agnadir_palabra()">Agregar</button>
+    </div>
+    <main class="principal">
+        <div class="palabra-dibujo">
+            <section class="palabra">
+                <h1 class="titulo">
+                    <span>El ahorcado</span>
+                </h1>
+                <input type="text" id="palabra-adivinar">
+            </section>
+            <div class="dibujo">
+                <img class="img imagen0" src="static/img/ahorcado-0.png" alt="">
+                <img class="img imagen1" src="static/img/ahorcado-1.png" alt="">
+                <img class="img imagen2" src="static/img/ahorcado-2.png" alt="">
+                <img class="img imagen3" src="static/img/ahorcado-3.png" alt="">
+                <img class="img imagen4" src="static/img/ahorcado-4.png" alt="">
+                <img class="img imagen5" src="static/img/ahorcado-5.png" alt="">
+                <img class="img imagen6" src="static/img/ahorcado-6.png" alt="">
+                <img class="img imagen7" src="static/img/ahorcado-7.png" alt="">
+                <img class="img imagen8" src="static/img/ahorcado-8.png" alt="">
+                <img class="img imagen9" src="static/img/ahorcado-9.png" alt="">
+                <img class="img imagen10" src="static/img/ahorcado-10.png" alt="">
+            </div>
+        </div>
+       
+        <section class="teclado">
+            <div class="sup">
+                <button class="tecla" id="Q" onclick='seleccionar_letra("Q")'>Q</button>
+                <button class="tecla" id="W"onclick='seleccionar_letra("W")'>W</button>
+                <button class="tecla" id="E"onclick='seleccionar_letra("E")'>E</button>
+                <button class="tecla" id="R"onclick='seleccionar_letra("R")'>R</button>
+                <button class="tecla" id="T" onclick='seleccionar_letra("T")'>T</button>
+                <button class="tecla" id="Y" onclick='seleccionar_letra("Y")'>Y</button>
+                <button class="tecla" id="U" onclick='seleccionar_letra("U")'>U</button>
+                <button class="tecla" id="I" onclick='seleccionar_letra("I")'>I</button>
+                <button class="tecla" id="O" onclick='seleccionar_letra("O")'>O</button>
+                <button class="tecla" id="P" onclick='seleccionar_letra("P")'>P</button>
+            </div>
+            <div class="mid">
+                <button class="tecla" id="A" onclick='seleccionar_letra("A")'>A</button>
+                <button class="tecla" id="S" onclick='seleccionar_letra("S")'>S</button>
+                <button class="tecla" id="D" onclick='seleccionar_letra("D")'>D</button>
+                <button class="tecla" id="F" onclick='seleccionar_letra("F")'>F</button>
+                <button class="tecla" id="G" onclick='seleccionar_letra("G")'>G</button>
+                <button class="tecla" id="H" onclick='seleccionar_letra("H")'>H</button>
+                <button class="tecla" id="J" onclick='seleccionar_letra("J")'>J</button>
+                <button class="tecla" id="K" onclick='seleccionar_letra("K")'>K</button>
+                <button class="tecla" id="L" onclick='seleccionar_letra("L")'>L</button>
+                <button class="tecla" id="Ñ" onclick='seleccionar_letra("Ñ")'>Ñ</button>
+
+            </div>
+            <div class="low">
+                <button class="tecla" id="Z" onclick='seleccionar_letra("Z")'>Z</button>
+                <button class="tecla" id="X" onclick='seleccionar_letra("X")'>X</button>
+                <button class="tecla" id="C" onclick='seleccionar_letra("C")'>C</button>
+                <button class="tecla" id="V" onclick='seleccionar_letra("V")'>V</button>
+                <button class="tecla" id="B" onclick='seleccionar_letra("B")'>B</button>
+                <button class="tecla" id="N" onclick='seleccionar_letra("N")'>N</button>
+                <button class="tecla" id="M" onclick='seleccionar_letra("M")'>M</button>
+            </div>
+        </section>
+
+    </main>
+    <div class="ganaste">
+        <span>GANASTE</span>
+        <button class="again" onclick="location.reload()">Nuevo intento</button> 
+    </div>
+    <div class="perdiste">
+        <span>PERDISTE</span> 
+        <button class="again" onclick="location.reload()">Nuevo intento</button> 
+    </div>
+    <footer></footer>
+    <script src="ahorcado.js"></script>
 </body>
 </html>
