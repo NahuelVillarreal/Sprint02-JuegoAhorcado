@@ -1,5 +1,5 @@
 let palabra_seleccionada = document.getElementById("palabra-adivinar");
-let palabras = ["HOLA", "JAMON", "MILANESA", "PAPA", "ASADO"];
+let palabras = ["HOLA", "JAMON", "MILANESA", "PAPA", "ASADO", "MATE", "VASO", "OTORRINOLARINGOLOGIA", "CELULAR", "TERMO", "ESTERNOCLESTOMASTOIDEO", "ARBOL", "CIECIOLOGIA", "COMPUTADORA", "ORACLE", "TECLADO"];
 let contador = -1;
 let contador2 = 0;
 let partes = document.getElementsByClassName("img");
